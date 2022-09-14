@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="userId" value="mngr433776"/>
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="Password" value="ArEjAvy"/>
+    <classes>
+      <class name="TestNG.testngProject.ParallelExecution">
+        <methods>
+          <include name="browserInvoke"/>
+          <include name="closer"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestNG.testngProject.ParallelExecution -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="userId" value="mngr433776"/>
+    <parameter name="browserType" value="edge"/>
+    <parameter name="Password" value="ArEjAvy"/>
+    <classes>
+      <class name="TestNG.testngProject.ParallelExecution">
+        <methods>
+          <include name="browserInvoke"/>
+          <include name="closer"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestNG.testngProject.ParallelExecution -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
